@@ -8,8 +8,6 @@ const PORT = process.env.PORT || 5000;
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
 
-// Use default router under /
-// json-server handles GET /jobs, GET /jobs/:id, POST /jobs, etc.
 server.use(router);
 
 server.listen(PORT, () => {

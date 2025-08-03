@@ -1,6 +1,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0776ff, #ff00e0);  color: #fff;
+  background: linear-gradient(135deg, #0776ff, #ff00e0);
+  color: #fff;
   margin: 0;
   padding: 0;
   color: #1d2226;
@@ -26,6 +27,7 @@ body {
   cursor: pointer;
   transition: background 0.2s ease;
 }
+
 .primary-btn:hover {
   background-color: #004182;
 }
@@ -45,7 +47,6 @@ body {
 .back-button:hover {
   background-color: #ccc;
 }
-
 
 /* Job List page stylings below */
 
@@ -71,12 +72,15 @@ body {
   color: #1d2226;
   transition: background 0.2s ease;
 }
+
 .job-card:hover {
   background: #dce6f1;
 }
+
 .job-card h3 {
   margin: 0 0 6px;
 }
+
 .job-card p {
   margin: 0;
   font-size: 15px;
@@ -101,7 +105,7 @@ body {
 }
 
 .search-input:focus {
-  border-color: #0a66c2; /* LinkedIn blue */
+  border-color: #0a66c2;
   outline: none;
 }
 
@@ -121,7 +125,7 @@ body {
   padding: 30px;
   max-width: 600px;
   width: 100%;
-  border-top: 5px solid #0a66c2; /* LinkedIn Blue */
+  border-top: 5px solid #0a66c2;
 }
 
 .job-title {
@@ -202,4 +206,3 @@ body {
 .job-form button:hover {
   background-color: #004182;
 }
-
