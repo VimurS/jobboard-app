@@ -1,4 +1,3 @@
-// server/index.js
 const express = require("express");
 const fs = require("fs");
 const cors = require("cors");
@@ -24,7 +23,7 @@ app.get("/jobs/:id", (req, res) => {
   res.json(job);
 });
 
-// POST new job
+// POST a job
 app.post("/jobs", (req, res) => {
   const jobs = JSON.parse(fs.readFileSync(filePath));
   const newJob = {
@@ -38,4 +37,6 @@ app.post("/jobs", (req, res) => {
   res.status(201).json(newJob);
 });
 
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});

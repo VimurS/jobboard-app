@@ -7,7 +7,10 @@ const PORT = process.env.PORT || 5000;
 
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
-server.use("/jobs", router);
+
+// Use default router under /
+// json-server handles GET /jobs, GET /jobs/:id, POST /jobs, etc.
+server.use(router);
 
 server.listen(PORT, () => {
   console.log(`JSON Server is running on port ${PORT}`);
